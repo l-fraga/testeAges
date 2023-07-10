@@ -24,12 +24,18 @@ public class Troco {
         System.out.println("Digite o preço do produto: ");
         double precoProduto = in.nextDouble();
 
-        System.out.println(precoProduto);
-
         System.out.println("Digite o valor pago: ");
         double valorPago = in.nextDouble();
 
-        System.out.println(valorPago);
+        double troco = calculaDiferenca(precoProduto, valorPago);
+
+        if (troco < 0) {
+            System.out.println("O valor pago não é suficiente.");
+        } else if (troco == 0) {
+            System.out.println("O valor pago não é suficiente.");
+
+        }
+
     }
 
     public int separaInteiro(double valorPago) {
@@ -42,7 +48,7 @@ public class Troco {
         return valorDecimal;
     }
 
-    public double calculaDiferenca(double precoProduto, double valorPago){
+    public static double calculaDiferenca(double precoProduto, double valorPago) {
         return Math.abs(precoProduto - valorPago);
     }
 }
