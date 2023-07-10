@@ -41,4 +41,8 @@ public class Troco {
         double valorDecimal = valorPago % 1;
         return valorDecimal;
     }
+
+    public double calculaDiferenca(double precoProduto, double valorPago){
+        return Math.abs(precoProduto - valorPago);
+    }
 }
