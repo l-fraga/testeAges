@@ -23,43 +23,31 @@ public class Troco {
         } else {
             System.out.println("O troco é de R$: " + troco);
 
-            int notasDeDuzentos = (int) (troco / 200);
-            troco %= 100;
+            int notasDeDuzentos = calculaTroco(troco, 200);
 
-            int notasDeCem = (int) (troco / 100);
-            troco %= 100;
+            int notasDeCem = calculaTroco(troco, 100);
 
-            int notasDeCinquenta = (int) (troco / 50);
-            troco %= 50;
+            int notasDeCinquenta = calculaTroco(troco, 50);
 
-            int notasDeVinteCinco = (int) (troco / 25);
-            troco %= 25;
+            int notasDeVinteCinco = calculaTroco(troco, 25);
 
-            int notasDeDez = (int) (troco / 10);
-            troco %= 10;
+            int notasDeDez = calculaTroco(troco, 100);
 
-            int notasDeCinco = (int) (troco / 5);
-            troco %= 5;
+            int notasDeCinco = calculaTroco(troco, 5);
 
-            int notasDeDois = (int) (troco / 2);
-            troco %= 2;
+            int notasDeDois = calculaTroco(troco, 2);
 
-            int moedasDeUmReal = (int) (troco);
-            troco -= (int) (troco);
+            int moedasDeUmReal = calculaTroco(troco, 1);
 
-            int moedasDeCinquentaCentavos = (int) (troco / 0.50);
-            troco %= 0.50;
+            int moedasDeCinquentaCentavos = calculaTroco(troco, 0.50);
 
-            int moedasDeVinteECincoCentavos = (int) (troco / 0.25);
-            troco %= 0.25;
+            int moedasDeVinteECincoCentavos = calculaTroco(troco, 0.25);
 
-            int moedasDeDezCentavos = (int) (troco / 0.10);
-            troco %= 0.10;
+            int moedasDeDezCentavos = calculaTroco(troco, 0.10);
 
-            int moedasDeCincoCentavos = (int) (troco / 0.05);
-            troco %= 0.05;
+            int moedasDeCincoCentavos = calculaTroco(troco, 0.05);
 
-            int moedasDeUmCentavo = (int) (troco / 0.01);
+            int moedasDeUmCentavo = calculaTroco(troco, 0.01);
 
             System.out.println(" + nota(s) de R$ 100.00");
 
