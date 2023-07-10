@@ -1,8 +1,10 @@
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Troco {
     public static void main(String[] args) throws Exception {
+        Locale brLocale = new Locale("pt", "BR");
         Scanner in = new Scanner(System.in);
 
         int qtt200;
@@ -22,9 +24,12 @@ public class Troco {
         System.out.println("Digite o preço do produto: ");
         double precoProduto = in.nextDouble();
 
+        System.out.println(precoProduto);
+
         System.out.println("Digite o valor pago: ");
         double valorPago = in.nextDouble();
 
+        System.out.println(valorPago);
     }
 
     public int separaInteiro(double valorPago) {
