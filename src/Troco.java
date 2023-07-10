@@ -1,7 +1,46 @@
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * Calculadora de troco.
+ */
 public class Troco {
+    /**
+     * Calcula a diferença entre o preço do produto e o valor pago.
+     *
+     * @param precoProduto o preço do produto
+     * @param valorPago    o valor pago
+     * @return a diferença entre o preço e o valor pago
+     */
+
+    public static double calculaDiferenca(double precoProduto, double valorPago) {
+        return Math.abs(precoProduto - valorPago);
+    }
+
+    /**
+     * Calcula o número de notas ou moedas necessárias para dar o troco.
+     *
+     * @param troco o valor do troco
+     * @param valor o valor da nota ou moeda
+     * @return o número de notas ou moedas necessárias
+     */
+
+    public static int calculaTroco(double troco, double valor) {
+        var resultado = (int) (troco / valor);
+        if (valor == 1)
+            troco -= valor;
+        else
+            troco %= valor;
+        return resultado;
+
+    }
+
+    /**
+     * Método principal para executar o programa de cálculo de troco.
+     *
+     * @param args os argumentos da linha de comando
+     */
+    
     public static void main(String[] args) throws Exception {
         Locale brLocale = new Locale("pt", "BR");
         Scanner in = new Scanner(System.in);
@@ -74,21 +113,6 @@ public class Troco {
             System.out.println(moedasDeUmCentavo + "+ moeda(s) de R$ 0,01");
 
         }
-
+        in.close();
     }
-
-    public static double calculaDiferenca(double precoProduto, double valorPago) {
-        return Math.abs(precoProduto - valorPago);
-    }
-
-    public static int calculaTroco(double troco, double valor) {
-        var resultado = (int) (troco / valor);
-        if (valor == 1)
-            troco -= valor;
-        else
-            troco %= valor;
-        return resultado;
-
-    }
-
 }
