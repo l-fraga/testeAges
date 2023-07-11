@@ -86,31 +86,31 @@ public class Troco {
 
             int moedasDeUmCentavo = calculaTroco(troco, 0.01);
 
-            System.out.println(notasDeDuzentos + " + nota(s) de R$ 200.00");
+            System.out.println(notasDeDuzentos + " nota(s) de R$ 200.00");
 
-            System.out.println(notasDeCem + " + nota(s) de R$ 100.00");
+            System.out.println(notasDeCem + " nota(s) de R$ 100.00");
 
-            System.out.println(notasDeCinquenta + " + nota(s) de R$ 50.00");
+            System.out.println(notasDeCinquenta + " nota(s) de R$ 50.00");
 
-            System.out.println(notasDeVinteECinco + " + nota(s) de R$ 25.00");
+            System.out.println(notasDeVinteECinco + " nota(s) de R$ 25.00");
 
-            System.out.println(notasDeDez + " + nota(s) de R$ 10.00");
+            System.out.println(notasDeDez + " nota(s) de R$ 10.00");
 
-            System.out.println(notasDeCinco + " + nota(s) de R$ 5.00");
+            System.out.println(notasDeCinco + " nota(s) de R$ 5.00");
 
-            System.out.println(notasDeDois + " + nota(s) de R$ 2.00");
+            System.out.println(notasDeDois + " nota(s) de R$ 2.00");
 
-            System.out.println(moedasDeUmReal + "+ moeda(s) de R$ 1,00");
+            System.out.println(moedasDeUmReal + " moeda(s) de R$ 1,00");
 
-            System.out.println(moedasDeCinquentaCentavos + "+ moeda(s) de R$ 0,50");
+            System.out.println(moedasDeCinquentaCentavos + " moeda(s) de R$ 0,50");
 
-            System.out.println(moedasDeVinteECincoCentavos + "+ moeda(s) de R$ 0,25");
+            System.out.println(moedasDeVinteECincoCentavos + " moeda(s) de R$ 0,25");
 
-            System.out.println(moedasDeDezCentavos + "+ moeda(s) de R$ 0,10");
+            System.out.println(moedasDeDezCentavos + " moeda(s) de R$ 0,10");
 
-            System.out.println(moedasDeCincoCentavos + "+ moeda(s) de R$ 0,05");
+            System.out.println(moedasDeCincoCentavos + " moeda(s) de R$ 0,05");
 
-            System.out.println(moedasDeUmCentavo + "+ moeda(s) de R$ 0,01");
+            System.out.println(moedasDeUmCentavo + " moeda(s) de R$ 0,01");
 
         }
         in.close();
