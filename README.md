@@ -1,18 +1,26 @@
-## Getting Started
+Manual de compilação e execução:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Verificação:
+Verifique se você tem o Java Development Kit (JDK) instalado no seu sistema. Você pode verificar isso executando o seguinte comando no prompt de comando ou terminal: javac -version
+Se o comando for reconhecido e mostrar a versão do JDK instalada, isso significa que o JDK está configurado corretamente.
 
-## Folder Structure
+Compilação:
+Abra um editor de texto, como o Bloco de Notas ou qualquer editor de texto de sua preferência.
+Copie o código-fonte Java e cole-o no editor de texto.
+Salve o arquivo com a extensão .java. Por exemplo, você pode salvar o arquivo como Troco.java. Certifique-se de salvá-lo em um diretório de sua escolha.
+Abra o prompt de comando (Windows) ou terminal (Linux/Mac).
+Navegue até o diretório onde o arquivo .java está localizado usando o comando cd (Change Directory). 
+Por exemplo: javac Troco.java
 
-The workspace contains two folders by default, where:
+Execução:
+Isso irá compilar o código e gerar um arquivo .class correspondente.
+Verifique se o arquivo .class foi gerado corretamente no mesmo diretório em que o arquivo .java está localizado.
+Agora, para executar o programa, use o comando java seguido do nome da classe principal (no caso do código fornecido, é Troco). 
+Por exemplo: java Troco.
+O programa será executado e você verá a saída no prompt de comando ou terminal.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Considerações adicionais:
+Certifique-se de ter o Java Development Kit (JDK) instalado em seu sistema e as variáveis de ambiente configuradas corretamente.
+Verifique se não há erros de compilação durante o processo de compilação. Caso ocorra algum erro, revise o código e corrija os problemas antes de tentar compilar novamente.
+Se o programa tiver dependências externas, como bibliotecas adicionais, você precisará incluí-las no classpath ao compilar e executar o programa.
