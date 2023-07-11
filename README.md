@@ -2,7 +2,7 @@ Manual de compilação e execução:
 
 Passo 1:
 Clonar repositório
-Copie este link:
+Copie este link: https://github.com/l-fraga/testeAges.git
 
 Passo 2:
 Abra o prompt de comando (Windows) ou terminal (Linux/Mac). 
