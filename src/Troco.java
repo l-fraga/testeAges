@@ -74,12 +74,13 @@ public class Troco {
             troco %= 2;
 
             int moedasDeUmReal = (int) (troco / 1);
+            troco -= (int) troco;
 
             int moedasDeCinquentaCentavos = (int) (troco / 0.50);
             troco %= 0.50;
 
-            int moedasDeVinteECincoCentavos = (int) (troco / 0.50);
-            troco %= 0.50;
+            int moedasDeVinteECincoCentavos = (int) (troco / 0.25);
+            troco %= 0.25;
 
             int moedasDeDezCentavos = (int) (troco / 0.10);
             troco %= 0.10;
