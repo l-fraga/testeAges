@@ -21,6 +21,4 @@ O programa será executado e você verá a saída no prompt de comando ou termin
 
 
 Considerações adicionais:
-Certifique-se de ter o Java Development Kit (JDK) instalado em seu sistema e as variáveis de ambiente configuradas corretamente.
 Verifique se não há erros de compilação durante o processo de compilação. Caso ocorra algum erro, revise o código e corrija os problemas antes de tentar compilar novamente.
-Se o programa tiver dependências externas, como bibliotecas adicionais, você precisará incluí-las no classpath ao compilar e executar o programa.
