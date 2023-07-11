@@ -40,16 +40,26 @@ public class Troco {
      *
      * @param args os argumentos da linha de comando
      */
-    
+
     public static void main(String[] args) throws Exception {
         Locale brLocale = new Locale("pt", "BR");
         Scanner in = new Scanner(System.in);
 
         System.out.println("Digite o preço do produto: ");
-        double precoProduto = in.nextDouble();
+        var stringPreco = in.nextLine();
+        if (stringPreco.contains(",")) {
+            stringPreco = stringPreco.replace(',', '.');
+        }
+
+        var precoProduto = Double.parseDouble(stringPreco);
 
         System.out.println("Digite o valor pago: ");
-        double valorPago = in.nextDouble();
+        var stringPago = in.nextLine();
+        if (stringPago.contains(",")) {
+            stringPago = stringPago.replace(',', '.');
+        }
+
+        var valorPago = Double.parseDouble(stringPago);
 
         double troco = calculaDiferenca(precoProduto, valorPago);
 

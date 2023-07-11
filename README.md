@@ -1,7 +1,7 @@
 Manual de compilação e execução:
 
 Verificação:
-Verifique se você tem o Java Development Kit (JDK) instalado no seu sistema. Você pode verificar isso executando o seguinte comando no prompt de comando ou terminal: javac -version
+Verifique se você tem o Java Development Kit (JDK) instalado no seu sistema. Você pode verificar isso executando o seguinte comando no prompt de comando ou terminal: javac -version.
 Se o comando for reconhecido e mostrar a versão do JDK instalada, isso significa que o JDK está configurado corretamente.
 
 Compilação:
