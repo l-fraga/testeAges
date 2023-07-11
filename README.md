@@ -4,7 +4,7 @@ Verificação:
 Verifique se você tem o Java Development Kit (JDK) instalado no seu sistema. Você pode verificar isso executando o seguinte comando no prompt de comando ou terminal: javac -version.
 Se o comando for reconhecido e mostrar a versão do JDK instalada, isso significa que o JDK está configurado corretamente.
 
-![Demonstração de comando no terminal] src\imagens\4-verificar-a-versão-do-java.png
+![Demonstração de comando no terminal] (src\imagens\4-verificar-a-versão-do-java.png)
 
 Compilação:
 Abra um editor de texto, como o Bloco de Notas ou qualquer editor de texto de sua preferência.
